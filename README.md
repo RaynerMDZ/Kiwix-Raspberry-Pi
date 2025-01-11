@@ -13,7 +13,7 @@ Before starting, make sure:
 1. You have a Raspberry Pi with Raspberry Pi OS installed.
 2. You have an active internet connection.
 3. You are logged in as a user with `sudo` privileges.
-4. My user is admin, if yours is different please change it in the below scrips.
+4. My user is `admin`, if yours is different please change it in the below scrips.
 
 ---
 
