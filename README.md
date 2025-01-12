@@ -26,20 +26,7 @@ First, ensure your system is up to date:
 sudo apt update -y && sudo apt upgrade -y
 ```
 
-### Step 2: Install Dependencies
-Install the required dependencies for Kiwix:
-
-```bash
-sudo apt install build-essential cmake libboost-all-dev libssl-dev \
-libcurl4-openssl-dev libxml2-dev zlib1g-dev qtbase5-dev \
-libqt5webkit5-dev qtchooser qt5-qmake qtbase5-dev-tools \
-libprotobuf-dev protobuf-compiler libjsoncpp-dev libsqlite3-dev \
-libffi-dev libhidapi-dev libusb-1.0-0-dev libfuse-dev \
-libminiupnpc-dev libboost-system-dev libboost-filesystem-dev \
-libboost-program-options-dev libboost-thread-dev -y
-```
-
-### Step 3: Install Kiwix Tools
+### Step 2: Install Kiwix Tools
 Install the Kiwix Tools package:
 
 ```bash
@@ -50,7 +37,7 @@ sudo apt install kiwix-tools -y
 
 ## Setting Up the Kiwix Library
 
-### Step 4: Create a Library File
+### Step 3: Create a Library File
 
 1. Create a directory to store your library:
    ```bash
@@ -74,7 +61,7 @@ sudo apt install kiwix-tools -y
    </library>
    ```
 
-### Step 5: Download a Sample Book
+### Step 4: Download a Sample Book
 
 Download a sample ZIM file to your library directory:
 
@@ -82,7 +69,7 @@ Download a sample ZIM file to your library directory:
 sudo wget -O /home/admin/kiwix-library/medlineplus.gov_en_all_2025-01.zim https://download.kiwix.org/zim/zimit/medlineplus.gov_en_all_2025-01.zim
 ```
 
-### Step 6: Add the Book to Your Library
+### Step 5: Add the Book to Your Library
 
 Add the downloaded ZIM file to your `library.xml` file:
 
@@ -105,8 +92,8 @@ You can now access the Kiwix server by navigating to your Raspberry Pi's IP addr
 ---
 
 ## Troubleshooting Tips
-- **Permission Issues:** Ensure you are running commands with `sudo` if required.
-- **Port Conflicts:** If port 80 is in use, choose another port with the `--port` flag.
+- **Permission Issues:** Ensure you run commands with `sudo` if required.
+- **Port Conflicts:** If port 80 is used, choose another port with the `--port` flag.
 - **File Download Problems:** Verify your internet connection and the URL of the ZIM file.
 
 ---
