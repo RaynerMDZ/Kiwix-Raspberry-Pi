@@ -119,6 +119,15 @@ RestartSec=3
 WantedBy=multi-user.target
 ```
 
+Finally, run the following:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable kiwix.service
+sudo systemctl start kiwix.service
+sudo systemctl status kiwix.service
+```
+
 ---
 
 ## Troubleshooting Tips
