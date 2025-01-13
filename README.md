@@ -91,6 +91,36 @@ You can now access the Kiwix server by navigating to your Raspberry Pi's IP addr
 
 ---
 
+## Optional
+
+To start Kiwix on port 80 after boot up:
+
+```bash
+sudo nano /etc/systemd/system/kiwix.service
+```
+
+Add the following:
+
+```bash
+[Unit]
+Description=Kiwix Serve
+After=network.target
+
+[Service]
+ExecStart=sudo /usr/bin/kiwix-serve --port=80 --library /home/admin/kiwix-library/library.xml
+WorkingDirectory=/home/admin/kiwix-library
+User=admin
+Group=admin
+Environment=DISPLAY=:0
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+```
+
+---
+
 ## Troubleshooting Tips
 - **Permission Issues:** Ensure you run commands with `sudo` if required.
 - **Port Conflicts:** If port 80 is used, choose another port with the `--port` flag.
