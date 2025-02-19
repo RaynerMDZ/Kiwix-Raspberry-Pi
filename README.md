@@ -66,7 +66,7 @@ sudo apt install kiwix-tools -y
 Download a sample ZIM file to your library directory:
 
 ```bash
-sudo wget -O /home/admin/kiwix-library/medlineplus.gov_en_all_2025-01.zim https://download.kiwix.org/zim/zimit/medlineplus.gov_en_all_2025-01.zim
+sudo wget -O /home/admin/kiwix-library/archlinux_en_all_nopic_2022-12.zim https://download.kiwix.org/zim/other/archlinux_en_all_nopic_2022-12.zim
 ```
 
 ### Step 5: Add the Book to Your Library
