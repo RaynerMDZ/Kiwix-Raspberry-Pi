@@ -74,7 +74,7 @@ sudo wget -O /home/admin/kiwix-library/archlinux_en_all_nopic_2022-12.zim https:
 Add the downloaded ZIM file to your `library.xml` file:
 
 ```bash
-sudo kiwix-manage /home/admin/kiwix-library/library.xml add /home/admin/kiwix-library/medlineplus.gov_en_all_2025-01.zim -u https://download.kiwix.org/zim/zimit/medlineplus.gov_en_all_2025-01.zim
+sudo kiwix-manage /home/admin/kiwix-library/library.xml add /home/admin/kiwix-library/archlinux_en_all_nopic_2022-12.zim -u https://download.kiwix.org/zim/other/archlinux_en_all_nopic_2022-12.zim
 ```
 
 ---
